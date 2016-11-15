@@ -13,6 +13,7 @@ public class CallCalculateAndDisplay {
 		salary = scan.nextInt();
 		System.out.print("Enter turnover :");
 		turnover = scan.nextInt();
+		Calculate cal=new Calculate(salary, turnover);
 	}
 
 }
