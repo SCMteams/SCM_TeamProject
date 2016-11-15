@@ -19,11 +19,11 @@ public class Calculate {
 		return turnOver; 
 	}
 	public Double getCommission(){
-		if( turnOver >= 1 && turnOver <= 25000 ){
+		if( turnOver >= 1 && turnOver <= 50000 ){
 			commission  = salary + (turnOver*0.01) ;
-		}else if(turnOver >= 25001 && turnOver <= 50000){
+		}else if(turnOver >= 50001 && turnOver <= 100000){
 			commission  = salary + (turnOver*0.02) ;
-		}else if(turnOver > 50001){
+		}else if(turnOver > 100001){
 			commission  = salary + (turnOver*0.03) ;
 		}else{
 			commission = salary;
