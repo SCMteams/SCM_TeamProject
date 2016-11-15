@@ -14,6 +14,7 @@ public class CallCalculateAndDisplay {
 		System.out.print("Enter turnover :");
 		turnover = scan.nextInt();
 		Calculate cal=new Calculate(salary, turnover);
+		System.out.println(cal.getCommission());//testเรียกฟังกชันcalculate
 	}
 
 }
