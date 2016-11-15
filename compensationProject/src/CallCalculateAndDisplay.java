@@ -6,6 +6,7 @@ public class CallCalculateAndDisplay {
 		String name;
 		double salary;
 		double turnover;
+		double commission;
 		Scanner scan= new Scanner(System.in);
 		System.out.print("Enter name :");
 		name = scan.nextLine();
@@ -14,8 +15,10 @@ public class CallCalculateAndDisplay {
 		System.out.print("Enter turnover :");
 		turnover = scan.nextInt();
 		Calculate cal=new Calculate(salary, turnover);
-		Display d_play = new Display(name,turnover);
+		commission = cal.getCommission();
+		Display d_play = new Display(name,commission);
 		d_play.getDisplay();
+		scan.close();
 	}
 
 }

@@ -1,11 +1,11 @@
 public class Display {
 	private String name;
-	private Double turnOver;
-	public Display(String name, double turnOver){
+	private Double commission;
+	public Display(String name, double commission){
 		this.name = name;
-		this.turnOver = turnOver;
+		this.commission = commission;
 	}
 	public void getDisplay(){
-		System.out.print("Employee name : " + name + " Compensation received : " + turnOver);
+		System.out.print("Employee name : " + name + " Compensation received : " + commission);
 	}
 }
